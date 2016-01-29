@@ -1,0 +1,9 @@
+template.sublime-project
+template.sublime-workspace
+css/*.min.css
+sass/.sass-cache/
+bower_components/
+.codekit-cache
+fonts/font-awesome
+
+node_modules/
