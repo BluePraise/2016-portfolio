@@ -12,8 +12,7 @@
     position: relative;
     margin-bottom: 25px;
     display: table; //so the photography caption can align to the bottom of this element
-        height: 85vh;
-    
+    height: 85vh;
     background-image: url('../images/me.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -83,11 +82,6 @@ header.section-intro {
 }
 
 .origins {
-    @include breakpoint(320px) {
-        .resume {
-            text-align: center;
-        }
-    }
     @include breakpoint(960px) {
         margin-right: span(1);
         @include span(5 last of 12);
@@ -140,4 +134,10 @@ header.section-intro {
         -webkit-transition: color 400ms ease;
         transition: color 400ms ease;
     }
+}
+
+.pretty-box {
+    border: 1px solid rgba(204, 204, 204, 0.47);
+    padding: 7px;
+    background: white;
 }

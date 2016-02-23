@@ -19,3 +19,5 @@ sass/_skrollr.scss
 images/me.jpg
 
 .DS_Store
+
+*.codekit

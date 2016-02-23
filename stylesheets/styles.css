@@ -3198,12 +3198,6 @@ header.section-intro h3 {
   margin-left: 40px;
 }
 
-@media (min-width: 320px) {
-  .origins .resume {
-    text-align: center;
-  }
-}
-
 @media (min-width: 960px) {
   .origins {
     margin-right: 6.7796610169%;
@@ -3259,6 +3253,12 @@ header.section-intro h3 {
   color: #090e37;
   -webkit-transition: color 400ms ease;
   transition: color 400ms ease;
+}
+
+.pretty-box {
+  border: 1px solid rgba(204, 204, 204, 0.47);
+  padding: 7px;
+  background: white;
 }
 
 .cd-top {
