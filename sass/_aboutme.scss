@@ -1,124 +1,143 @@
 .about-me {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .looking-good {
-	margin-top: 0;
+    margin-top: 0;
+    display: table-cell;
+    vertical-align: bottom;
 }
 
 .magalielinda {
-	position: relative;	
+    position: relative;
+    margin-bottom: 25px;
+    display: table; //so the photography caption can align to the bottom of this element
+        height: 85vh;
+    
+    background-image: url('../images/me.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    z-index: 0;
 }
+
 .cta-buttons {
-	position: absolute;
-	width: 100%;
-	text-align: center;
-  top: 70%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 70%;
+    z-index: 2;
 }
 
 .cta-button {
-  margin: 0 10px;
-  padding: 10px 20px;
-  font-family: $oswald;
-  font-size: 1.2em;
-  font-weight: 700;
-	text-transform: uppercase;
-  line-height: 2.20em;
-  // color: rgba(32, 152, 183, 0.5);
-  color: rgba(255, 255, 255, 0.8);
-  // background-color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(32, 152, 183, 0.5);
-  border-radius: 3px;
-  border-bottom: 1px solid #2098b7;
-  opacity: 0;
-  &:hover {
-  	background-color: rgba(32, 152, 183, 0.8);
-  }
-  &:visited {
-	  background-color: rgba(32, 152, 183, 0.5);
-	  color: rgba(255, 255, 255, 0.8);
-  }
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-family: $oswald;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2.20em;
+    // color: rgba(32, 152, 183, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    // background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(32, 152, 183, 0.5);
+    border-radius: 3px;
+    border-bottom: 1px solid #2098b7;
+    opacity: 0;
+    &:hover {
+        background-color: rgba(32, 152, 183, 0.8);
+    }
+    &:visited {
+        background-color: rgba(32, 152, 183, 0.5);
+        color: rgba(255, 255, 255, 0.8);
+    }
 }
 
 header.section-intro {
-	background-color: transparent;	
-  border-bottom: 1px solid rgba(204, 204, 204, 0.47);
-  line-height: 1em;
-	span {
-		display: inline-block;
-	}
-	h3 {
-		display: inline-block;
-	}	
-
+    background-color: transparent;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.47);
+    line-height: 1em;
+    span {
+        display: inline-block;
+    }
+    h3 {
+        display: inline-block;
+    }
 }
 
 .definitions {
-	@include breakpoint(768px) {
-		margin: 0 20px;
-	}
-	@include breakpoint(960px) {
-		@include span(5 of 12);
-		margin-left: span(1);
-	}
+    @include breakpoint(768px) {
+        margin: 0 20px;
+    }
+    @include breakpoint(960px) {
+        @include span(5 of 12);
+        margin-left: span(1);
+    }
 }
+
 .definitions ol {
-	margin-top: 20px;
-	margin-left: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
 }
 
 .origins {
-	@include breakpoint(320px) {
-		.resume {
-			text-align: center;
-		}
-	}
-	@include breakpoint(960px) {
-		margin-right: span(1);
-		@include span(5 last of 12);
-	}
-	h3 { margin: 1em 0; }
-	ul {
-	  margin-top: 20px;
-	  margin-bottom: 20px;
-	  margin-left: 10px;
-	  display: table;
-	  li {
-	  	display: table-row;
-	  }
-	}
+    @include breakpoint(320px) {
+        .resume {
+            text-align: center;
+        }
+    }
+    @include breakpoint(960px) {
+        margin-right: span(1);
+        @include span(5 last of 12);
+    }
+    h3 {
+        margin: 1em 0;
+    }
+    ul {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        display: table;
+        li {
+            display: table-row;
+        }
+    }
 }
 
 .skill-label,
 .stars {
-	display: table-cell;
+    display: table-cell;
 }
 
-.stars { padding-left: 10px; }
+.stars {
+    padding-left: 10px;
+}
 
 .fa-star-o {
-	color: #ccc;
+    color: #ccc;
 }
 
 .fa-download {
-	font-size: 30px;
-  margin-right: 10px;
-	vertical-align: sub;
-  color: #ccc;
+    font-size: 30px;
+    margin-right: 10px;
+    vertical-align: sub;
+    color: #ccc;
 }
 
 .resume a {
-	display: inline-block;
-	padding: 5px;
-	font-family: $oswald;
-  font-weight: 100;
-  font-size: 20px;
+    display: inline-block;
+    padding: 5px;
+    font-family: $oswald;
+    font-weight: 100;
+    font-size: 20px;
 }
 
 .resume:hover {
-	.fa-download {
-  	color: $mainColor;
-  	-webkit-transition: color 400ms ease;
-    transition:         color 400ms ease;
-	}
+    .fa-download {
+        color: $mainColor;
+        -webkit-transition: color 400ms ease;
+        transition: color 400ms ease;
+    }
 }

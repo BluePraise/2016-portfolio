@@ -146,35 +146,30 @@
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
   -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }
 
@@ -2777,7 +2772,6 @@ nav.share-my-work ul li {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
           transform: translate(0, 0);
 }
 
@@ -3121,10 +3115,22 @@ p.work-label {
 
 .looking-good {
   margin-top: 0;
+  display: table-cell;
+  vertical-align: bottom;
 }
 
 .magalielinda {
   position: relative;
+  margin-bottom: 25px;
+  display: table;
+  height: 85vh;
+  background-image: url("../images/me.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  z-index: 0;
 }
 
 .cta-buttons {
@@ -3132,6 +3138,7 @@ p.work-label {
   width: 100%;
   text-align: center;
   top: 70%;
+  z-index: 2;
 }
 
 .cta-button {

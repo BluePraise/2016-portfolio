@@ -9,3 +9,13 @@ fonts/font-awesome
 node_modules/
 
 and-my-crap/
+
+images/me.png
+
+js/min/main-min.js
+
+sass/_skrollr.scss
+
+images/me.jpg
+
+.DS_Store
