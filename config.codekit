@@ -6816,7 +6816,7 @@
 		"outputAbbreviatedPath": "\/images\/work\/abm-showcase.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/work\/anshuisman.png": {
 		"fileType": 32768,
@@ -6827,7 +6827,7 @@
 		"outputAbbreviatedPath": "\/images\/work\/anshuisman.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/work\/asjoosten-imac.png": {
 		"fileType": 32768,
@@ -6838,7 +6838,7 @@
 		"outputAbbreviatedPath": "\/images\/work\/asjoosten-imac.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/work\/coppenhagenstudiofrontpage-imac.png": {
 		"fileType": 32768,
@@ -6849,7 +6849,7 @@
 		"outputAbbreviatedPath": "\/images\/work\/coppenhagenstudiofrontpage-imac.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/work\/fotomuseum-showcase.png": {
 		"fileType": 32768,
@@ -6860,7 +6860,7 @@
 		"outputAbbreviatedPath": "\/images\/work\/fotomuseum-showcase.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/work\/fpu-showcase.png": {
 		"fileType": 32768,
@@ -6871,7 +6871,7 @@
 		"outputAbbreviatedPath": "\/images\/work\/fpu-showcase.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/work\/gem-online-showcase.png": {
 		"fileType": 32768,
@@ -6882,7 +6882,7 @@
 		"outputAbbreviatedPath": "\/images\/work\/gem-online-showcase.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/work\/hco-showcase.png": {
 		"fileType": 32768,
@@ -6893,7 +6893,7 @@
 		"outputAbbreviatedPath": "\/images\/work\/hco-showcase.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/work\/hero-imac-showcase.png": {
 		"fileType": 32768,
@@ -6904,7 +6904,7 @@
 		"outputAbbreviatedPath": "\/images\/work\/hero-imac-showcase.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/work\/ospt-enroll-imac.png": {
 		"fileType": 32768,
@@ -6915,7 +6915,7 @@
 		"outputAbbreviatedPath": "\/images\/work\/ospt-enroll-imac.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/index.html": {
 		"fileType": 8192,
@@ -6932,6 +6932,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/main.js",
 		"outputAbbreviatedPath": "\/js\/min\/main-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/js\/min\/main-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/main-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/main-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -7027,6 +7038,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/_mywork.scss",
 		"outputAbbreviatedPath": "\/css\/_mywork.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
+	"\/sass\/_talk-to-me.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/_talk-to-me.scss",
+		"outputAbbreviatedPath": "\/css\/_talk-to-me.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
