@@ -12,14 +12,17 @@
     position: relative;
     margin-bottom: 25px;
     display: table; //so the photography caption can align to the bottom of this element
-    height: 85vh;
     background-image: url('../images/me.jpg');
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
+    height: 50vh;
     width: 100%;
-    z-index: 0;
+    z-index: 10;
+    @include breakpoint(768px) {
+        background-size: 100%;
+        height: 85vh;
+    }
 }
 
 .cta-buttons {
@@ -27,7 +30,7 @@
     width: 100%;
     text-align: center;
     top: 70%;
-    z-index: 2;
+    z-index: 20;
 }
 
 .cta-button {
@@ -38,9 +41,7 @@
     font-weight: 700;
     text-transform: uppercase;
     line-height: 2.20em;
-    // color: rgba(32, 152, 183, 0.5);
     color: rgba(255, 255, 255, 0.8);
-    // background-color: rgba(255, 255, 255, 0.8);
     background-color: rgba(32, 152, 183, 0.5);
     border-radius: 3px;
     border-bottom: 1px solid #2098b7;

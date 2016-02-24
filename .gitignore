@@ -6,7 +6,7 @@ bower_components/
 .codekit-cache
 fonts/font-awesome
 
-node_modules/
+node_modules/*
 
 and-my-crap/
 

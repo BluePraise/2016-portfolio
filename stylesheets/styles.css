@@ -1,14 +1,14 @@
 @charset "UTF-8";
 /*!
- *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.4.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.5.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2641,6 +2641,86 @@
   content: "";
 }
 
+.fa-reddit-alien:before {
+  content: "";
+}
+
+.fa-edge:before {
+  content: "";
+}
+
+.fa-credit-card-alt:before {
+  content: "";
+}
+
+.fa-codiepie:before {
+  content: "";
+}
+
+.fa-modx:before {
+  content: "";
+}
+
+.fa-fort-awesome:before {
+  content: "";
+}
+
+.fa-usb:before {
+  content: "";
+}
+
+.fa-product-hunt:before {
+  content: "";
+}
+
+.fa-mixcloud:before {
+  content: "";
+}
+
+.fa-scribd:before {
+  content: "";
+}
+
+.fa-pause-circle:before {
+  content: "";
+}
+
+.fa-pause-circle-o:before {
+  content: "";
+}
+
+.fa-stop-circle:before {
+  content: "";
+}
+
+.fa-stop-circle-o:before {
+  content: "";
+}
+
+.fa-shopping-bag:before {
+  content: "";
+}
+
+.fa-shopping-basket:before {
+  content: "";
+}
+
+.fa-hashtag:before {
+  content: "";
+}
+
+.fa-bluetooth:before {
+  content: "";
+}
+
+.fa-bluetooth-b:before {
+  content: "";
+}
+
+.fa-percent:before {
+  content: "";
+}
+
 * *, * *:before, * *:after {
   box-sizing: border-box;
 }
@@ -2660,6 +2740,8 @@ html {
 }
 
 body {
+  position: relative;
+  z-index: 0;
   margin: 0;
   background-color: #f4f4f4;
   color: #090e37;
@@ -2823,6 +2905,135 @@ nav.share-my-work .mygithub, nav.share-my-work .mycodepen, nav.share-my-work .my
   position: fixed;
 }
 
+@-webkit-keyframes nudge {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@keyframes nudge {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@-webkit-keyframes hinge {
+  0% {
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  20%, 60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+            transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  40%, 80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+            transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate3d(0, 700px, 0);
+            transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes hinge {
+  0% {
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  20%, 60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+            transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  40%, 80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+            transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate3d(0, 700px, 0);
+            transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}
+
+keyframes fadeOutLeft from {
+  opacity: 1;
+}
+
+keyframes fadeOutLeft to {
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+}
+
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+          animation-name: fadeOutLeft;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+}
+
+.hinge {
+  -webkit-animation-name: hinge;
+          animation-name: hinge;
+}
+
 section {
   width: 100%;
   float: left;
@@ -2984,14 +3195,20 @@ p.work-label {
   position: relative;
   margin-bottom: 25px;
   display: table;
-  height: 85vh;
   background-image: url("../images/me.jpg");
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
+  height: 50vh;
   width: 100%;
-  z-index: 0;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .magalielinda {
+    background-size: 100%;
+    height: 85vh;
+  }
 }
 
 .cta-buttons {
@@ -2999,7 +3216,7 @@ p.work-label {
   width: 100%;
   text-align: center;
   top: 70%;
-  z-index: 2;
+  z-index: 20;
 }
 
 .cta-button {
@@ -3181,28 +3398,53 @@ header.section-intro h3 {
 .talk-to-me {
   opacity: 0;
   position: fixed;
-  top: 40%;
   left: -4px;
+  z-index: 24;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
-  padding: 10px;
   border-radius: 4px;
   border: 1px solid #2098b7;
+  top: 20%;
+}
+
+@media (min-width: 480px) {
+  .talk-to-me {
+    top: 30%;
+  }
+}
+
+.talk-to-me:hover > .fa {
+  -webkit-animation: nudge 0.8s linear infinite;
+          animation: nudge 0.8s linear infinite;
 }
 
 .contact-list {
   position: fixed;
-  top: 46.3%;
-  left: -20px;
+  z-index: 24;
+  top: 38%;
+  left: -250px;
   background-color: #090e37;
   color: white;
-  padding: 10px;
-  opacity: 0;
+  padding-right: 30px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
   border-radius: 4px;
+  box-shadow: grey 1px 2px 3px;
 }
 
 .contact-list ul {
   margin-top: 15px;
+  border-left: 1px solid rgba(32, 152, 183, 0.5);
+  padding-left: 15px;
+}
+
+.contact-list ul li a:hover {
+  color: white;
 }
 
 .contact-list.show-this {
@@ -3212,13 +3454,12 @@ header.section-intro h3 {
 }
 
 .go-away .contact-list {
-  opacity: 0;
-  -webkit-transition: opacity 1s ease;
-  transition: opacity 1s ease;
+  -webkit-animation: fadeOutLeft 0.8s linear;
+          animation: fadeOutLeft 0.8s linear;
 }
 
 .contact-list > ul .fa {
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .fa-coffee {

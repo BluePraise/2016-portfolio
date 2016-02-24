@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "breakpoint-sass": "~2.5.0",
-    "font-awesome": "fontawesome#~4.4.0",
+    "font-awesome": "^4.5.0",
     "susy": "^2.2.12",
     "jquery": "^2.2.0"
   }

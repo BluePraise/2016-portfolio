@@ -38,27 +38,30 @@ jQuery(document).ready(function($) {
         }, scroll_top_duration);
     });
 
-
 });
 
 $('document').ready(function() {
     $('.first').delay('700').fadeTo('700', 1);
     $('.second').delay('1000').fadeTo('700', 1);
     $('.talk-to-me').delay('1300').fadeTo('700', 1);
-});
 
-$('.talk-to-me').on('click', function(e) {
-  e.preventDefault();
-  var cl = $('.contact-list');
-  cl.addClass('show-this');
-  $('.show-this').animate({left: "-4px"});
-  $('.talk-to-me').addClass('go-away');
-});
+    $('.show').on('click', function(event) {
+        var cl = $('.contact-list');
+        $('.talk-to-me').removeClass('show');
+        $('.talk-to-me').add('go-away');
 
-$('.go-away').on('click', function(event) {
-  console.log("default " + event.type + " prevented");
-  alert("cynthia sucks");
-  event.preventDefault();
-  // $('.show-this').animate({left: "-220px"});
-  // $('.talk-to-me').removeClass('go-away');
+        cl.animate({
+            'left': '-4px',
+            'opacity': 0.9
+        }, 600);
+        event.preventDefault();
+    });
+
+    $('.go-away').on('click', function(event) {
+      console.log("bla is " +event.type + "type");
+
+        alert('vhjkl');
+        // $('.contact-list').addClass('hinge');
+        // $('.talk-to-me').removeClass('go-away');
+    });
 });
