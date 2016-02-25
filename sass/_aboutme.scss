@@ -13,14 +13,14 @@
     margin-bottom: 25px;
     display: table; //so the photography caption can align to the bottom of this element
     background-image: url('../images/me.jpg');
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 50vh;
+    background-size: 100% 100%;
+    min-height: 50vh;
     width: 100%;
     z-index: 10;
-    @include breakpoint(768px) {
-        background-size: 100%;
+    @include breakpoint(769px) {
+        background-attachment: fixed;
         height: 85vh;
     }
 }

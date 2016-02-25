@@ -2731,8 +2731,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
-  width: 100%;
-  height: 100%;
   font-family: 'Lato', sans-serif;
   line-height: 26px;
   font-size: 16px;
@@ -2745,6 +2743,13 @@ body {
   margin: 0;
   background-color: #f4f4f4;
   color: #090e37;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  position: relative;
+  z-index: 0;
 }
 
 a {
@@ -3196,17 +3201,17 @@ p.work-label {
   margin-bottom: 25px;
   display: table;
   background-image: url("../images/me.jpg");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 50vh;
+  background-size: 100% 100%;
+  min-height: 50vh;
   width: 100%;
   z-index: 10;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .magalielinda {
-    background-size: 100%;
+    background-attachment: fixed;
     height: 85vh;
   }
 }
