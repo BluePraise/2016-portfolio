@@ -3422,9 +3422,20 @@ header.section-intro h3 {
   }
 }
 
+.talk-to-me > .fa {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 1.0s linear;
+  transition: all 1.0s linear;
+  -webkit-animation: nudge 1s infinite;
+          animation: nudge 1s infinite;
+}
+
 .talk-to-me:hover > .fa {
-  -webkit-animation: nudge 0.8s linear infinite;
-          animation: nudge 0.8s linear infinite;
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
 }
 
 .contact-list {
