@@ -7052,6 +7052,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/images\/work\/oxxio-showcase.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 104056,
+		"inputAbbreviatedPath": "\/images\/work\/oxxio-showcase.png",
+		"outputAbbreviatedPath": "\/images\/work\/oxxio-showcase.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/work\/sumedia-showcase.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 104489,
+		"inputAbbreviatedPath": "\/images\/work\/sumedia-showcase.png",
+		"outputAbbreviatedPath": "\/images\/work\/sumedia-showcase.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index-old.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -7171,6 +7193,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/_base.scss",
 		"outputAbbreviatedPath": "\/css\/_base.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
+	"\/sass\/_cover-hero.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/_cover-hero.scss",
+		"outputAbbreviatedPath": "\/css\/_cover-hero.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -7530,17 +7568,6 @@
 		"inputAbbreviatedPath": "\/templates\/magalielinda.json",
 		"orderOutput": 0,
 		"outputAbbreviatedPath": "\/templates\/magalielinda-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
-	"\/templates\/test.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/templates\/test.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/templates\/test-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1

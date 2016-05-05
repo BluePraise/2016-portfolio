@@ -33,6 +33,11 @@
     text-transform: uppercase;
 }
 
+%hide-on-mobile {
+  @include breakpoint(max-width 420px) {
+    display: none;
+  }
+}
 .hide {
     display: none !important;
 }

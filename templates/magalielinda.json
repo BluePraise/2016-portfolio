@@ -1,46 +1,116 @@
 {
-	"workitem": [
-		{
-		"title" : "Website van Ans Huisman",
-		"link" : "http://anshuisman.nl",
-		"img" : "images/work/anshuisman.png",
-		"label" : "anshuisman.nl",
-		"repo" : "https://github.com/BluePraise/ansforthewin2015",
-		"employer" : "",
-		"tools": [{
-			"name": "wordpress",
-			"classname" : "wordpress",
-			"link": "http://wordpress.org"	
-			}]
-		}, {
-		"title" : "Website van a Better Monday.",
-		"link" : "http://abettermonday.nl",
-		"img" : "images/work/abm-showcase.png",
-		"label" : "a Better Monday.",
-		"repo" : "https://github.com/BluePraise/abettermonday",
-		"employer" : "@LimoenGroen.nl - Amsterdam"
-		}, {
-		"title" : "Free Press Unlimited.",
-		"link" : "http://freepressunlimited.org/nl",
-		"img" : "images/work/fpu-showcase.png",
-		"label" : "a Better Monday.",
-		"repo" : "https://github.com/BluePraise/abettermonday",
-		"employer" : ""
-	}],
-	"tools": [{
-		"name": "wordpress",
-		"classname" : "wordpress",
-		"link": "http://wordpress.org"	
-	}, {
-		"name": "sass",
-		"classname" : "code",
-		"link" : "http://sass-lang.com"
-	}, {
-		"name" : "susy",
-		"link" : "http://susy.readthedocs.org/en/latest/"
-	}, {
-		"name" : "Drupal 7",
-		"classname" : "drupal",
-		"link" : "http://drupal.org"
-	}]
+    "workitem": [
+    {
+        "title": "Oxxio",
+        "link": "http://www.oxxio.nl/",
+        "img": "images/work/oxxio-showcase.png",
+        "label": "Oxxio O&O Campagne",
+        "hasRepo": false,
+        "hired": true,
+        "hired": true,
+        "employerName": "@TamTam - Amsterdam",
+        "employerLink": "http://tamtam.nl",
+        "tools": [{
+            "name": "AngularJS",
+            "classname": "angular",
+            "link": "http://angular.org"
+        }]
+    },
+    {
+        "title": "Sumedia",
+        "link": "http://www.sumedia.nl/",
+        "img": "images/work/sumedia-showcase.png",
+        "label": "Sumedia",
+        "hasRepo": false,
+        "hired": false,
+        "tools": [{
+            "name": "WordPress",
+            "classname": "wordpress",
+            "link": "http://wordpress.org"
+        }]
+    },
+    {
+        "title": "Profielsite van Ans Huisman",
+        "link": "http://anshuisman.nl",
+        "img": "images/work/anshuisman.png",
+        "label": "anshuisman.nl",
+        "hasRepo": true,
+        "repo": "https://github.com/BluePraise/ansforthewin2015",
+        "hired": false,
+        "tools": [{
+            "name": "WordPress",
+            "classname": "wordpress",
+            "link": "http://wordpress.org"
+        }]
+    }, {
+        "title": "Website van a Better Monday.",
+        "link": "http://abettermonday.nl",
+        "img": "images/work/abm-showcase.png",
+        "label": "a Better Monday.",
+        "hasRepo": true,
+        "repo": "https://github.com/BluePraise/abettermonday",
+        "hired": false,
+        "tools": [{
+            "name": "WordPress",
+            "classname": "wordpress",
+            "link": "http://wordpress.org"
+        }]
+    }, {
+        "title": "Free Press Unlimited.",
+        "link": "http://freepressunlimited.org/nl",
+        "img": "images/work/fpu-showcase.png",
+        "label": "a Better Monday.",
+        "hasRepo": false,
+        "hired": true,
+        "employerName": "@LimoenGroen.nl - Amsterdam",
+        "employerLink": "http://LimoenGroen.nl",
+        "tools": [{
+            "name": "Drupal 7",
+            "classname": "drupal",
+            "link": "http://drupal.org"
+        }]
+    }, {
+        "title": "Historisch Centrum Overijssel",
+        "link": "https://www.historischcentrumoverijssel.nl/",
+        "img": "images/work/hco-showcase.png",
+        "label": "History Centrum Overijssel",
+        "hasRepo": false,
+        "hired": true,
+        "employerName": "@LimoenGroen.nl - Amsterdam",
+        "employerLink": "http://LimoenGroen.nl",
+        "tools": [{
+            "name": "Drupal 7",
+            "classname": "drupal",
+            "link": "http://drupal.org"
+        }]
+    }, {
+        "title": "Gem Online",
+        "link": "http://www.gem-online.nl/",
+        "img": "images/work/gem-online-showcase.png",
+        "label": "Gem Online",
+        "hasRepo": false,
+        "hired": true,
+        "employerName": "@LimoenGroen.nl - Amsterdam",
+        "employerLink": "http://LimoenGroen.nl",
+        "tools": [{
+            "name": "Drupal 7",
+            "classname": "drupal",
+            "link": "http://drupal.org"
+        }]
+    }, {
+        "title": "Fotomuseum Den Haag",
+        "link": "http://www.fotomuseumdenhaag.nl/",
+        "img": "images/work/fotomuseum-showcase.png",
+        "label": "Fotomuseum Den Haag",
+        "hasRepo": false,
+        "hired": true,
+        "employerName": "@LimoenGroen.nl - Amsterdam",
+        "employerLink": "http://LimoenGroen.nl",
+        "tools": [{
+            "name": "Drupal 7",
+            "classname": "drupal",
+            "link": "http://drupal.org"
+        }]
+    }
+]
 }

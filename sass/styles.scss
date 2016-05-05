@@ -11,15 +11,17 @@
 @import "header";
 @import "mywork";
 @import "aboutme";
+@import "cover-hero";
 @import "backtotop";
 @import "talk-to-me";
 
-
 .container {
-  @include container(960px);
+  padding: 0 15px;
+
 }
 
 footer {
+  clear: both;
 	line-height: 80px;
   background-color: rgb(9, 14, 55);
 }
@@ -35,7 +37,7 @@ footer {
 	margin: 0 3px;
 }
 
-.madewithlove{
+.madewithlove {
   @extend %brand-text;
   &:hover {
     background-color: rgba(255, 255, 255, 0.5);

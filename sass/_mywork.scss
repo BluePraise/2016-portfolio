@@ -1,44 +1,30 @@
-section {
-    @include span(12 of 12);
-    @include breakpoint(320px) {
-        padding: 0 10px;
-    }
-    @include breakpoint(768px) {
-        padding: 0 0px;
-    }
-}
-
 .work {
     clear: both;
     ul {
         list-style: none;
         li.work-item {
-            @include breakpoint(320px) {
+            padding: 0.5em;
+            box-shadow: 0px 0px 3px #ccc;
+            opacity: 0.8;
+            @include breakpoint(420px) {
                 @include gallery(6 of 12);
             }
             @include breakpoint(768px) {
                 @include gallery(4 of 12);
             }
+            &:hover {
+                transition: all 200ms ease-in;
+                background-color: white;
+                transform: scale(1.05);
+                opacity: 1;
+            }
             margin-bottom: 30px;
             img {
                 display: block;
-                padding: 0 20px;
+                padding: 20px;
             }
         }
     }
-}
-
-.section-title {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.2em;
-    color: rgba(255, 255, 255, 0.8);
-    font-family: $oswald;
-    background-color: rgba(32, 152, 183, 0.5);
-    padding-left: 10px;
-    line-height: 2.20em;
-    border-radius: 3px;
-    border-bottom: 2px solid #2098b7
 }
 
 .work-item > a {
@@ -46,7 +32,7 @@ section {
     border-bottom: 1px solid rgba(204, 204, 204, 0.47);
     &:hover {
         border-bottom: 1px solid $secondaryColor;
-    }
+;    }
 }
 
 p.work-label {
@@ -63,6 +49,7 @@ p.work-label {
         }
         padding: 0 2em;
     }
+    i { margin-right: 10px; }
     a {
         font-weight: 100;
         font-family: $oswald;

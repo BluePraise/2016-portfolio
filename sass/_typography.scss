@@ -1,3 +1,6 @@
+// font-family: 'Crimson Text', serif;
+// font-family: $oswald;
+
 .site-title {
   @extend %brand-text;
   margin: 0;
@@ -13,4 +16,22 @@
       transition:         color 400ms ease, font-size 400ms ease;
     }
   }
+}
+
+.section-title {
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.5px;
+    font-family: 'Crimson Text', serif;
+    // background-color: rgba(32, 152, 183, 0.5);
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background-color: #090e37;
+    padding-left: 10px;
+    line-height: 2.20em;
+    border-radius: 3px;
+    border-bottom: 1px solid #2098b7;
 }
