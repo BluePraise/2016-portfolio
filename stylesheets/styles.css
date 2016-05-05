@@ -3009,7 +3009,6 @@ section {
 @media (min-width: 768px) {
   section {
     padding: 0 0px;
-    margin: 30px;
   }
 }
 
@@ -6926,14 +6925,15 @@ header.section-intro h3 {
 
 footer {
   clear: both;
-  line-height: 80px;
   background-color: #090e37;
+  margin-top: 20px;
 }
 
 .copyright {
   font-size: 24px;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
+  padding: 20px 0;
 }
 
 .heart:before {
