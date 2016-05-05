@@ -6186,6 +6186,37 @@ keyframes fadeOutLeft to {
   animation-name: slideOutUp;
 }
 
+/*SCROLL DOWN BUTTON*/
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+@keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+            transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+            transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
 section {
   width: 100%;
   float: left;
@@ -6407,6 +6438,8 @@ h2.hero--title i.fa-times {
   border-radius: 4px;
   border: 2px solid rgba(32, 152, 183, 0.5);
   margin: auto;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 .profile-picture:after {
@@ -6415,12 +6448,12 @@ h2.hero--title i.fa-times {
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
-  top: 140px;
-  right: 440px;
+  top: -43px;
+  left: 102px;
   height: 200px;
-  width: 220px;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  width: 190px;
+  -webkit-transform: rotateY(190deg);
+          transform: rotateY(190deg);
 }
 
 .hero-container {
@@ -6435,11 +6468,13 @@ h2.hero--title i.fa-times {
   font-style: italic;
   border-bottom: 1px solid rgba(255, 255, 255, 0.23);
   padding-bottom: 20px;
+  opacity: 0;
 }
 
 .cta-button {
+  display: inline-block;
   margin: 0 10px;
-  padding: 20px 40px;
+  padding: 10px 30px;
   font-family: "Oswald", sans-serif;
   font-size: 1.2em;
   font-weight: 700;
@@ -6459,6 +6494,42 @@ h2.hero--title i.fa-times {
 .cta-button:visited {
   background-color: rgba(32, 152, 183, 0.5);
   color: rgba(255, 255, 255, 0.8);
+}
+
+.cta-button i {
+  margin-right: 10px;
+}
+
+.scroll-down a {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font: normal 400 20px/1 'Crimson Text', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.scroll-down a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
 }
 
 header.section-intro {

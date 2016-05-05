@@ -33,7 +33,7 @@ $('document').ready(function() {
     $('.first').delay('700').fadeTo('700', 1);
     $('.second').delay('1000').fadeTo('700', 1);
     $('.third').delay('1300').fadeTo('700', 1);
-    $('.talk-to-me').delay('1300').fadeTo('700', 1);
+    $('.intro-text').delay('1600').fadeTo('700', 1);
 
     $('.show').on('click', function(event) {
         var cl = $('.contact-list');
@@ -53,5 +53,12 @@ $('document').ready(function() {
         alert('vhjkl');
         // $('.contact-list').addClass('hinge');
         // $('.talk-to-me').removeClass('go-away');
+    });
+});
+
+$(function() {
+    $('a[href*=#]').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
 });
