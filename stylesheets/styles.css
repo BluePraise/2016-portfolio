@@ -2991,7 +2991,7 @@ nav.share-my-work ul li {
   list-style: none;
 }
 
-.wordpress:before, .github:before, .code:before, .drupal:before, .employer:before, nav.share-my-work ul li a:before, .heart:before {
+nav.share-my-work ul li a:before, .wordpress:before, .github:before, .code:before, .drupal:before, .employer:before, .heart:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -3142,6 +3142,24 @@ keyframes fadeOutLeft to {
 .hinge {
   -webkit-animation-name: hinge;
           animation-name: hinge;
+}
+
+.site-title {
+  margin: 0;
+  display: inline-block;
+}
+
+.site-title a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  font-size: 1.3em;
+  color: white;
+  text-decoration: underline;
+  -webkit-transition: color 400ms ease, font-size 400ms ease;
+  transition: color 400ms ease, font-size 400ms ease;
 }
 
 /*!
@@ -6217,6 +6235,53 @@ keyframes fadeOutLeft to {
   }
 }
 
+header {
+  background-color: #090e37;
+  font-weight: 300;
+  line-height: 48px;
+  border-bottom: 2px solid #2098b7;
+  margin-bottom: 0;
+}
+
+nav.share-my-work {
+  float: right;
+}
+
+nav.share-my-work ul li a:before {
+  margin-right: 5px;
+  color: white;
+  font-size: 30px;
+  line-height: 55px;
+}
+
+nav.share-my-work ul li a:visited:before {
+  color: #fff;
+}
+
+nav.share-my-work ul li a:hover:before {
+  color: #2098b7;
+}
+
+nav.share-my-work .mygithub {
+  margin-right: 5px;
+}
+
+nav.share-my-work .mygithub:before {
+  content: "\f113";
+}
+
+nav.share-my-work .mycodepen:before {
+  content: "\f1cb";
+}
+
+nav.share-my-work .mylinkedin {
+  margin-right: 5px;
+}
+
+nav.share-my-work .mylinkedin:before {
+  content: "\f0e1";
+}
+
 section {
   width: 100%;
   float: left;
@@ -6382,14 +6447,14 @@ p.work-label {
 
 @media (min-width: 769px) {
   .magalielinda {
-    background-attachment: fixed;
-    height: 85vh;
+    height: 80vh;
   }
 }
 
 .magalielinda:before {
   content: "";
   position: absolute;
+  -webkit-filter: blur(1px);
   background-image: url("../images/bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -6412,7 +6477,8 @@ p.work-label {
   left: 0;
   height: 100%;
   z-index: 1;
-  background-color: rgba(2, 0, 51, 0.45);
+  background: -webkit-linear-gradient(top, transparent 0, rgba(2, 0, 51, 0.8) 55%, rgba(0, 0, 0, 0.9) 100%);
+  background: linear-gradient(to bottom, transparent 0, rgba(2, 0, 51, 0.8) 55%, rgba(0, 0, 0, 0.9) 100%);
 }
 
 h2.hero--title {
@@ -6776,71 +6842,6 @@ header.section-intro h3 {
   content: " ";
   display: block;
   clear: both;
-}
-
-header {
-  background-color: #090e37;
-  font-weight: 300;
-  line-height: 48px;
-  border-bottom: 2px solid #2098b7;
-  margin-bottom: 0;
-}
-
-nav.share-my-work {
-  float: right;
-}
-
-nav.share-my-work ul li a:before {
-  margin-right: 5px;
-  color: white;
-  font-size: 30px;
-  line-height: 55px;
-}
-
-nav.share-my-work ul li a:visited:before {
-  color: #fff;
-}
-
-nav.share-my-work ul li a:hover:before {
-  color: #2098b7;
-}
-
-nav.share-my-work .mygithub {
-  margin-right: 5px;
-}
-
-nav.share-my-work .mygithub:before {
-  content: "\f113";
-}
-
-nav.share-my-work .mycodepen:before {
-  content: "\f1cb";
-}
-
-nav.share-my-work .mylinkedin {
-  margin-right: 5px;
-}
-
-nav.share-my-work .mylinkedin:before {
-  content: "\f0e1";
-}
-
-.site-title {
-  margin: 0;
-  display: inline-block;
-}
-
-.site-title a {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-}
-
-.site-title a:hover {
-  font-size: 1.3em;
-  color: white;
-  text-decoration: underline;
-  -webkit-transition: color 400ms ease, font-size 400ms ease;
-  transition: color 400ms ease, font-size 400ms ease;
 }
 
 footer {

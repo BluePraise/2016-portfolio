@@ -1,0 +1,46 @@
+header {
+  background-color: rgb(9, 14, 55);
+  font-weight: 300; 
+  line-height: 48px;
+  border-bottom: 2px solid $secondaryColor;
+  margin-bottom: 0;
+}
+
+nav.share-my-work {
+  @extend %horizontalnav;
+  @include span(last);
+  ul li a {
+    &:before {
+      @extend %fa;
+      margin-right: 5px;
+      color: white;
+      font-size: 30px;
+      line-height: 55px;
+    }
+    &:visited {
+      &:before {
+        color: $white;
+      }
+    }
+    &:hover {
+      &:before {
+        color: $secondaryColor;
+      }
+    }
+  }
+  
+  .mygithub {
+    margin-right: 5px;
+    @extend %text-hide;
+    &:before { content: "\f113"; }
+  }
+  .mycodepen {
+    @extend %text-hide;
+    &:before { content: "\f1cb"; }
+  }
+  .mylinkedin {
+    margin-right: 5px;
+    @extend %text-hide;
+    &:before { content: "\f0e1"; }
+  }
+}
