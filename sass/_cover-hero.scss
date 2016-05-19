@@ -90,7 +90,6 @@ h2.hero--title {
         }
     }
 }
-@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic);
 .hero-container {
     color: whitesmoke;
     text-align: center;
@@ -102,14 +101,17 @@ h2.hero--title {
     font-family: 'Crimson Text', serif;
     font-style: italic;
     border-bottom: 1px solid rgba(255, 255, 255, 0.23);
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     opacity: 0;
+    margin-bottom: 0;
     @include breakpoint(420px) {
         font-size: 30px;
     }
 }
 
-.cta-buttons {
+.quote {
+    margin-bottom: 20px;
+    font-weight: 400;
 }
 
 .cta-button {

@@ -1,6 +1,10 @@
 // font-family: 'Crimson Text', serif;
 // font-family: $oswald;
 
+//URL FOR ITALIC SERIF FONT
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic);
+
+
 .site-title {
   @extend %brand-text;
   margin: 0;

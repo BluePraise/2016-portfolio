@@ -16,7 +16,7 @@
 
 .fa {
   display: inline-block;
-  font: normal normal normal 14px / 1 FontAwesome;
+  font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -6689,14 +6689,20 @@ h2.hero--title i.fa-times {
   font-family: 'Crimson Text', serif;
   font-style: italic;
   border-bottom: 1px solid rgba(255, 255, 255, 0.23);
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   opacity: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: 420px) {
   .intro-text {
     font-size: 30px;
   }
+}
+
+.quote {
+  margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .cta-button {
