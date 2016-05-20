@@ -1,8 +1,6 @@
 @import "../bower_components/susy/sass/susy";
 @import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
 
-@import "font-awesome/font-awesome";
-
 @import "variables";
 @import "base";
 @import "utilities";
@@ -13,7 +11,7 @@
 @import "aboutme";
 @import "cover-hero";
 @import "backtotop";
-@import "talk-to-me";
+// @import "talk-to-me";
 
 .container {
   padding: 0 15px;
@@ -31,7 +29,6 @@ footer {
   padding: 20px 0;
 }
 .heart:before {
-	@extend %fa;
 	content: "\f004";
 	color: red;
 	margin: 0 3px;
