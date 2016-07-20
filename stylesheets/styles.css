@@ -263,6 +263,11 @@ nav.share-my-work .mygithub, nav.share-my-work .mycodepen, nav.share-my-work .my
   animation-duration: .75s;
 }
 
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
 @-webkit-keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -821,7 +826,7 @@ h2.hero--title i.fa-times {
 
 .scroll-down a {
   position: absolute;
-  bottom: 100px;
+  bottom: 60px;
   left: 50%;
   z-index: 2;
   display: inline-block;
