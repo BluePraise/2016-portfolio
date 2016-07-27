@@ -1,0 +1,59 @@
+
+main {
+    padding: 10px 50px 20px;
+    background: white;
+    border: rgba(0, 0, 0, 0.13) 1px solid;
+    box-shadow: inset -1px -2px 17px -4px rgba(128, 128, 128, 0.12);
+}
+
+.content-list {
+    margin-left: 25px;
+}
+
+.cv {
+	display: block;
+	text-decoration: none;
+	margin: 7px 0;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+footer {
+  clear: both;
+  margin-top: 20px;
+}
+.copyright {
+  text-align: center; 
+  padding: 20px 0;
+}
+.heart:before {
+	content: "\f004";
+	color: red;
+	margin: 0 3px;
+}
+
+.madewithlove {
+  @extend %brand-text;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: background-color 400ms ease;
+    transition: background-color 400ms ease;
+  }
+}
+
+.logo {
+  @extend %brand-text;
+  color: $secondaryColor;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.26em;
+  margin-right: 20px;
+  @include breakpoint(320px) {
+    margin-left: 10px;
+  }
+  @include breakpoint(768px) {
+    margin-left: 0px;
+  }
+}

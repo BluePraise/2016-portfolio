@@ -16,11 +16,11 @@ $textColor          : $mainColor;
 $headercolor        : $primaryColor;
 
 // Links and Buttons, incl states
-$link               : $secondaryColor;
-$link-active-state  : $secondaryColor;
-$link-hover-state   : $secondaryColor; 
-$link-visited-state : $secondaryColor;
-$link-focus-state   : $secondaryColor;
+$link               : $mainColor;
+$link-active-state  : $mainColor;
+$link-hover-state   : $mainColor; 
+$link-visited-state : $mainColor;
+$link-focus-state   : $mainColor;
 
 $selection-bg       : $black; //yellow
 $selection          : $white;

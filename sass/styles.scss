@@ -7,54 +7,8 @@
 @import "typography";
 @import "animations";
 @import "header";
-@import "mywork";
-@import "aboutme";
-@import "cover-hero";
+@import "main";
+// @import "mywork";
+// @import "aboutme";
+// @import "cover-hero";
 @import "backtotop";
-// @import "talk-to-me";
-
-.container {
-  padding: 0 15px;
-
-}
-
-footer {
-  clear: both;
-  background-color: rgb(9, 14, 55);
-  margin-top: 20px;
-}
-.copyright {
-  text-align: center; 
-  color: rgba(255, 255, 255, 0.5);
-  padding: 20px 0;
-}
-.heart:before {
-	content: "\f004";
-	color: red;
-	margin: 0 3px;
-}
-
-.madewithlove {
-  @extend %brand-text;
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    -webkit-transition: background-color 400ms ease;
-    transition: background-color 400ms ease;
-  }
-}
-
-.logo {
-  @extend %brand-text;
-  color: $secondaryColor;
-  display: inline-block;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: -0.26em;
-  margin-right: 20px;
-  @include breakpoint(320px) {
-    margin-left: 10px;
-  }
-  @include breakpoint(768px) {
-    margin-left: 0px;
-  }
-}

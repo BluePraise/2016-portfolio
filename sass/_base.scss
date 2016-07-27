@@ -8,10 +8,6 @@ html {
     -webkit-font-smoothing: antialiased; // maxvoltar.com/archive/-webkit-font-smoothing
     -moz-osx-font-smoothing: grayscale;
     overflow-y: scroll;
-    font-family: Arial, sans-serif;
-    line-height: 26px;
-    font-size: 16px;
-    font-weight: 300;
     @extend %strip-margin-padding;
 }
 
@@ -19,8 +15,10 @@ body {
     position: relative;
     z-index: 0;
     margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
     background-color: rgb(244, 244, 244);
-    color: rgb(9, 14, 55);
+    color: $mainColor;
     width: 100%;
     height: 100%;
     transition: opacity 100ms ease;
@@ -34,10 +32,9 @@ main {
 a {
     @extend %strip-margin-padding;
     color: $link;
-    text-decoration: underline;
+    cursor: pointer;
     background-color: transparent;
     padding: 2px;
-    font-weight: 700;
     &:active {
         color: $link-active-state;
     }
@@ -50,7 +47,6 @@ a {
     }
     &:hover {
         color: $primaryColor;
-        // background-color: $link;
         background-color: rgba(32, 152, 183, 0.1);
         -webkit-transition: background 400ms ease;
         transition: background 400ms ease;
@@ -70,21 +66,21 @@ a {
 }
 
 // TYPOGRAPHY.
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    clear: both;
-    &:first-child {
-        margin-top: 0;
-    }
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//     clear: both;
+//     &:first-child {
+//         margin-top: 0;
+//     }
+// }
 
-h1 {
-    font-size: 1.7em;
-}
+// h1 {
+//     font-size: 1.7em;
+// }
 
 ul,
 ol {
@@ -131,13 +127,9 @@ video {
     max-width: 100%;
 }
 
-section {
-    @include span(12 of 12);
-    @include breakpoint(320px) {
-        padding: 0 10px;
-    }
-    @include breakpoint(768px) {
-        padding: 0 0px;
-        // margin: 30px;
-    }
+.container {
+  margin: 0 auto;
+  @include breakpoint(960px) {
+    max-width: 960px;
+  }
 }
