@@ -12,9 +12,11 @@ html {
 }
 
 body {
+    // opacity: 0;
     position: relative;
     z-index: 0;
     margin: 0;
+    line-height: 1.4;
     font-family: $roboto, Arial, sans-serif;
     font-size: 14px;
     background-color: rgb(244, 244, 244);
@@ -129,6 +131,7 @@ video {
 
 .container {
   margin: 0 auto;
+  padding: 10px;
   @include breakpoint(960px) {
     max-width: 960px;
   }

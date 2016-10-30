@@ -10,6 +10,7 @@
     <meta name="description" content="Magalie Linda | Mayconnect.org | Front-End Developer voor heldere websites in Arnhem">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -21,9 +22,10 @@
 <body>
      
 
-	<!-- navigation.njk -->
+	<div class="container">
+		<!-- navigation.njk -->
 <header>
-    <div class="container">
+    
         <h1 class="site-title"><a href="/">Magalie Linda</a></h1>
         <nav class="share-my-work">
             <ul>
@@ -32,69 +34,102 @@
                 <li><a href="http://codepen.io/magalielinda/" class="mycodepen" alt="Codepen of Magalie Linda">Codepen</a></li>
             </ul>
         </nav>
-    </div>
+    
 </header>
-	<main class="container">
+		
+		
+<div class="content">	
+	<div class="content__left">
 		<section class="aboutme">
-	<h2>FREELANCE FRONT-END DESIGNER</h2>
-	<p>My CV is at the <a href="#here">bottom of the page</a></p>
-	<p>I am a hybrid of a designer, copywriter and a developer. I have made themes for WordPress and Drupal. I have written content for websites and I have designed some ads and features.</p>
-	<p>My main objective is to learn and grow, to have fun and to connect on an authentic level. For some clients I am a consultant, others ask me to work with them to refactor their css. Also, I do workshops. Big or small projects are not an issue, as long as we all have a good time. My clients include Intel, TamTam and smaller startups. </p>
-	<p>I believe in a good front-end architecture. No matter what technique you use, a browser will always end up rendering HTML and CSS. Having a good front-end architecture ensures the continuity in your project or your business. It would be a shame if you have to spend more time in restructuring and refactoring than actually progressing in your project.</p>
+			<h2>A Little bit about me.</h2>
+			<p>First, I apologize for this stoic website, as I am always too busy working on other people's websites. 
+			<p>I am a hybrid of a designer, copywriter and a developer. I have made themes for WordPress and Drupal. I have written content for websites and I have designed some ads and features.</p>
+			<p>My main objective is to learn and grow, to have fun and to connect on an authentic level. For some clients I am a consultant, others ask me to work with them to refactor their css. Also, I do workshops. Big or small projects are not an issue, as long as we all have a good time. My clients include Intel, TamTam and smaller startups. </p>
+			
+			
+				<p>I believe in a good front-end architecture. No matter what technique you use, a browser will always end up rendering HTML and CSS. Having a good front-end architecture ensures the continuity in your project or your business. It would be a shame if you have to spend more time in restructuring and refactoring than actually progressing in your project.</p>
+				<p>If you think I might be a good asset to your project, drop me a line. The size of your project is not a problem for me, start up or larger projects - I don't mind!</p>
+				<a class="button button__cta" href="mailto:maggie@magalielinda.me?subject=I%20have%20a%20cool%20project%20you%20might%20be%20pperfect%20for"><i class="fa fa-paper-plane" aria-hidden="true"></i>Click here to send me an email.</a>
 
-	<p>Other stuff you can talk to me about:</p>
-		<ul class="content-list">
-			<li>Gulp/Grunt (I prefer to use codekit)</li>
-			<li>Bower, NPM, Jade, etc.</li>
-			<li>Git</li>
-			<li>Command Line</li>
-			<li>Sass/Less</li>
-			<li>PHP</li>
-			<li>WordPress Theming (not Plugins)</li>
-			<li>Drupal Theming (not Plugins)</li>
-			<li>Animations in CSS</li>
-			<li>Responsive (I prefer Susy Grid)</li>
-			<li>Accessibility</li>
-			<li>Photoshop</li>
-			<li>Semantic HTML</li>
-			<li>Concepting</li>
-			<li>Jira, Scrum/Agile</li>
-		</ul>
-	<h2>WHAT YOU SHOULD NOT HIRE ME FOR</h2>
-	<p>I do not know about AngularJS or any other javascript framework.</p>
-</section>
+				<p>Other stuff you can talk to me about:</p>
+				<ul class="content-list">
+					<li>Gulp/Grunt (I prefer to use <a href="https://codekitapp.com/">codekit</a>)</li>
+					<li>Bower, NPM, Jade, etc.</li>
+					<li>Git</li>
+					<li>Command Line</li>
+					<li>Sass/Less</li>
+					<li>PHP</li>
+					<li>WordPress Theming (not Plugins)</li>
+					<li>Drupal Theming (not Plugins)</li>
+					<li>Animations in CSS</li>
+					<li>Responsive (I prefer Susy Grid)</li>
+					<li>Accessibility</li>
+					<li>Photoshop</li>
+					<li>Semantic HTML</li>
+					<li>Concepting</li>
+					<li>Jira, Scrum/Agile</li>
+				</ul>
+			
+				<h2>What you should not hire me for</h2>
+				<p>I do not know about AngularJS or any other javascript framework. :(</p>
+			
+		</section>
 
-<section class="work">
-	<h2>PROJECTS I'VE WORKED ON</h2>
-	<ul class="content-list">
-		<li class="project"><a href="http://gem-online.nl">Gem Online</a> - <a href="http://limoengroen.nl">LimoenGroen Amsterdam</a></li>
-		<li class="project"><a href="#">Fotomuseum Den Haag</a> - <a href="http://limoengroen.nl">LimoenGroen Amsterdam</a></li>
-		<li class="project"><a href="https://www.historischcentrumoverijssel.nl/">Historisch Centrum Overijssel</a> - <a href="http://limoengroen.nl">LimoenGroen Amsterdam</a></li>
-		<li class="project"><a href="http://freepressunlimited.org/nl">Free Press Unlimited</a> - <a href="http://limoengroen.nl">LimoenGroen Amsterdam</a></li>
-		<li class="project"><a href="http://sumedia.nl">Sumedia</a> - <a href="http://sumedia.nl">Sumedia Arnhem</a></li>
-		<li class="project"><a href="http://hetblauweuur.nl">Het Blauwe Uur</a> - <a href="het Blauwe Uur">Commissioned</a></li>
-		<li class="project"><a href="http://WebDesignWill.io">WebDesignWill</a> - <a href="http://WebDesignWill.io">WebDesignWill</a></li>
-		<li class="project"><a href="http://www.oxxio.nl/">Oxxio Campagne</a> - <a href="http://tamtam.nl">TamTam Amsterdam</a></li>
-		<li class="project"><a href="http://deltalloyd.nl">Delta Lloyd Campagne</a> - <a href="http://tamtam.nl">TamTam Amsterdam</a></li>
-		<li class="project"><a href="http://generali.nl">Generali (Accessibility)</a> - <a href="http://tamtam.nl">TamTam Amsterdam</a></li>
-		<li class="project"><a href="http://21dimes.nl">North Sea Jazz Campagne: 21Dimes</a> - <a href="http://tamtam.nl">TamTam Amsterdam</a></li>
-	</ul>
-</section>
+		<section class="work">
+			<h2>Some of the projects I've worked on</h2>
+			<ul class="content-list">
+				<li class="project"><a href="http://gem-online.nl">Gem Online</a> - <a href="http://limoengroen.nl">LimoenGroen Amsterdam</a></li>
+				<li class="project"><a href="#">Fotomuseum Den Haag</a> - <a href="http://limoengroen.nl">LimoenGroen Amsterdam</a></li>
+				<li class="project"><a href="https://www.historischcentrumoverijssel.nl/">Historisch Centrum Overijssel</a> - <a href="http://limoengroen.nl">LimoenGroen Amsterdam</a></li>
+				<li class="project"><a href="http://freepressunlimited.org/nl">Free Press Unlimited</a> - <a href="http://limoengroen.nl">LimoenGroen Amsterdam</a></li>
+				<li class="project"><a href="http://sumedia.nl">Sumedia</a> - <a href="http://sumedia.nl">Sumedia Arnhem</a></li>
+				<li class="project"><a href="http://hetblauweuur.nl">Het Blauwe Uur</a> - <a href="het Blauwe Uur">Commissioned</a></li>
+				<li class="project"><a href="http://WebDesignWill.io">WebDesignWill</a> - <a href="http://WebDesignWill.io">WebDesignWill</a></li>
+				<li class="project"><a href="http://www.oxxio.nl/">Oxxio Campagne</a> - <a href="http://tamtam.nl">TamTam Amsterdam</a></li>
+				<li class="project"><a href="http://deltalloyd.nl">Delta Lloyd Campagne</a> - <a href="http://tamtam.nl">TamTam Amsterdam</a></li>
+				<li class="project"><a href="http://generali.nl">Generali (Accessibility)</a> - <a href="http://tamtam.nl">TamTam Amsterdam</a></li>
+				<li class="project"><a href="http://21dimes.nl">North Sea Jazz Campagne: 21Dimes</a> - <a href="http://tamtam.nl">TamTam Amsterdam</a></li>
+			</ul>
+		</section>
+	</div>
 
-<section id="here" class="cvdetails">
-	<h2>RECENT CV</h2>
-	<a class="cv" href="CV-MagalieLinda.pdf" alt="Magalie Linda CV">
-		<span class="cv--label"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></span>
-		<span class="cv--document">CV in PDF</span>
-	</a>
-	<a class="cv" href="CV-MagalieLinda.docx" alt="Magalie Linda CV">
-		<span class="cv--label"><i class="fa fa-file-text" aria-hidden="true"></i></span>
-		<span class="cv--document">CV in DOCX</span>
-	</a>
-	<small>Tip: email me -- I do not pick up the phone or listen to voicemail.</small>
-</section>
-	</main>
- <a href="#0" class="cd-top">Top</a>
+	<div class="sidebar content__right">
+		<aside class="calendar">
+			<h2><i class="fa fa-calendar" aria-hidden="true"></i>CALENDAR</h2>
+			<small>Check here if I am available for your project.</small>
+			<h3>October 2016</h3>
+			<h3>November 2016</h3>
+			<div class="sidebar__item calendar__item">
+				<span class="calendar__date">3, 4 & 5 nov</span>
+				<span class="calendar__description">Consultancy Front-End Refactoring</span>
+			</div>
+			<div class="sidebar__item calendar__item">
+				<span class="calendar__date">22 nov - 25 nov</span>
+				<span class="calendar__description">Workshop Front-End Architecture @ Intel France</span>
+			</div>
+			<h3>December 2016</h3>
+			<div class="sidebar__item calendar__item">
+				<span class="calendar__date">19 dec - 6 jan</span>
+				<span class="calendar__description">Vacation! :D</span>
+			</div>
+			<a class="button button__cta" href="mailto:maggie@magalielinda.me?subject=I%20have%20a%20cool%20project%20you%20might%20be%20pperfect%20for">I am looking at projects for 2017</a>
+		</aside>
+		<div class="separator"></div>
+		<aside id="here" class="cv">
+			<h2><i class="fa fa-hand-o-right" aria-hidden="true"></i></i>RECENT CV</h2>
+			<a class="cv__item sidebar__item" href="CV-MagalieLinda.pdf" alt="Magalie Linda CV">
+				<span class="cv__label"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></span>
+				<span class="cv--document">CV in PDF</span>
+			</a>
+			<a class="cv__item sidebar__item" href="CV-MagalieLinda.docx" alt="Magalie Linda CV">
+				<span class="cv--label"><i class="fa fa-file-text" aria-hidden="true"></i></span>
+				<span class="cv--document">CV in DOCX</span>
+			</a>
+			<small>Tip: email me -- I do not pick up the phone or listen to voicemail.</small>
+		</aside>
+	</div>
+</div>
+		 <a href="#0" class="cd-top">Top</a>
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="copyright">
             <p>Made with <span class="fa fa-heart"></span> by <a class="madewithlove" href="mailto:hellothere@magalielinda.me">Magalie Linda</a>.</p>
@@ -102,9 +137,12 @@
         	<small>This is site was last update: 30th of October 2016</small>
         </div>
     </footer>
+	</div>
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>

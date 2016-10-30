@@ -3,9 +3,10 @@
 
 {% block content %} 
 
-	{% include "templates/partials/header.njk" %}
-	<main class="container">
+	<div class="container">
+		{% include "templates/partials/header.njk" %}
+		
 		{% include "templates/partials/main.njk" %}
-	</main>
-{% include "templates/partials/footer.njk" %}
+		{% include "templates/partials/footer.njk" %}
+	</div>
 {% endblock %}
