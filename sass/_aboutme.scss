@@ -1,17 +1,9 @@
-.left-col {
-    @include breakpoint(768px) {
-        margin: 0 20px;
-    }
-    @include breakpoint(960px) {
-        @include span(5 of 12);
-        margin-left: span(1);
-    }
-}
-
-.right-col {
-    @include breakpoint(960px) {
-        margin-right: span(1);
-        @include span(5 last of 12);
+header.section-intro {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.47);
+    line-height: 1em;
+    h3 {
+        display: inline-block;
     }
 }
 
@@ -48,7 +40,9 @@
         }
     }
 }
-
+.intro-nb {
+    padding-left: 10px;
+}
 .skill-label,
 .stars {
     display: table-cell;
