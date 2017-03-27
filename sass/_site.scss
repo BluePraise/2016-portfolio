@@ -1,5 +1,7 @@
 main.sitemain {
-  padding: 0 15px;
+  @include breakpoint(min-width 768px) {
+    padding: 0 15px;
+  }
 }
 
 .container {
