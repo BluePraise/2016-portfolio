@@ -106,23 +106,19 @@ h2.hero--title {
 
 .quote {
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 20px;
     opacity: 0.8;
-    text-shadow: 1px 1px #4E4D4D;
+    color: black;
 }
 
 .cta-button {
     display: block;
     margin: 0 10px;
-    margin-bottom: 10px;
     font-family: $oswald;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 2.20em;
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(32, 152, 183, 0.5);
-    border-radius: 3px;
-    border: 1px solid #2098b7;
+    text-shadow: 1px 1px #000;
+    text-decoration: none;
+    color: $white;
+    border-bottom: 2px solid white;
     opacity: 0;
     @include breakpoint(420px) {
         display: inline-block;
@@ -130,11 +126,12 @@ h2.hero--title {
         padding: 10px 30px;
     }
     &:hover {
+        color: $white;
         background-color: rgba(32, 152, 183, 0.8);
     }
     &:visited {
         background-color: rgba(32, 152, 183, 0.5);
-        color: rgba(255, 255, 255, 0.8);
+        color: $white;
     }
     i {
         margin-right: 10px;

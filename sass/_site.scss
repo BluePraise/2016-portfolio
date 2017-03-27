@@ -1,3 +1,35 @@
 main.sitemain {
   padding: 0 15px;
 }
+
+.container {
+  padding: 0 15px;
+
+}
+
+footer {
+  clear: both;
+  margin-top: 20px;
+
+}
+.copyright {
+  letter-spacing: 0.5px;
+  padding: 20px 0;
+  border: 1px solid #ccc;
+  font-size: 26px;
+  color: #090e37;
+  text-align: center;
+}
+.fa-heart:before {
+  color: red;
+  margin: 0 3px;
+}
+
+.madewithlove {
+  @extend %brand-text;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: background-color 400ms ease;
+    transition: background-color 400ms ease;
+  }
+}

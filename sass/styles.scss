@@ -13,33 +13,3 @@
 @import "backtotop";
 @import "header";
 // @import "talk-to-me";
-
-.container {
-  padding: 0 15px;
-
-}
-
-footer {
-  clear: both;
-  background-color: rgb(9, 14, 55);
-  margin-top: 20px;
-}
-.copyright {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-  padding: 20px 0;
-}
-.heart:before {
-	content: "\f004";
-	color: red;
-	margin: 0 3px;
-}
-
-.madewithlove {
-  @extend %brand-text;
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    -webkit-transition: background-color 400ms ease;
-    transition: background-color 400ms ease;
-  }
-}
