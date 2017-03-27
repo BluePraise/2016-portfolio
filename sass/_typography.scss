@@ -23,17 +23,14 @@
 
 .section-title {
     text-align: center;
+    padding: 20px 0 20px;
     margin-bottom: 50px;
-    font-style: italic;
+    font-family: 'Crimson Text', serif;
     font-weight: 300;
     font-size: 26px;
     line-height: 1.8em;
-    color: rgba(255, 255, 255, 1);
+    color: #090e37;
     letter-spacing: 0.5px;
-    font-family: 'Crimson Text', serif;
-    margin-top: 20px;
-    background-color: #090e37;
-    padding-left: 10px;
     border-radius: 3px;
     border-bottom: 1px solid #2098b7;
 }
