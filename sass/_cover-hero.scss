@@ -2,10 +2,6 @@
     position: relative;
     margin-bottom: 25px;
     height: 100vh;
-    @include breakpoint(321px) {
-        height: 80vh;
-        // background-attachment: fixed;
-    }
     &:before {
         content: "";
         position: absolute;
@@ -148,7 +144,7 @@ h2.hero--title {
 //http://codepen.io/nxworld/pen/OyRrGy
 .scroll-down a {
     position: absolute;
-    bottom: 60px;
+    bottom: 130px;
     left: 50%;
     z-index: 2;
     display: inline-block;

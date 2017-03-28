@@ -1,4 +1,7 @@
 header.sitehead {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
   background-color: rgb(9, 14, 55);
   font-weight: 300;
   line-height: 48px;
