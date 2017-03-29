@@ -1,65 +1,91 @@
 header.sitehead {
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  background-color: rgba(9, 14, 55, 0.4);
-  font-weight: 300;
-  line-height: 48px;
-  border-bottom: 2px solid $secondaryColor;
-  margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(9, 14, 55, 0.4);
+    font-weight: 300;
+    line-height: 48px;
+    border-bottom: 2px solid $secondaryColor;
+    margin-bottom: 0;
 }
 
 .site-logo {
-  @extend %brand-text;
-  color: $secondaryColor;
-  display: inline-block;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: -0.26em;
-  margin-right: 20px;
-  @include breakpoint(320px) {
-    margin-left: 10px;
-  }
-  @include breakpoint(768px) {
-    margin-left: 0px;
-  }
+    @extend %brand-text;
+    color: $secondaryColor;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.26em;
+    margin-right: 20px;
+    a {
+        display: block;
+    }
+    @include breakpoint(320px) {
+        margin-left: 10px;
+    }
+    @include breakpoint(768px) {
+        margin-left: 0px;
+    }
 }
 
 nav.nav--social {
-  @extend %horizontalnav;
-  @include span(last);
-  ul li a {
-    &:before {
-      @extend %fa;
-      margin-right: 5px;
-      color: white;
-      font-size: 30px;
-      line-height: 55px;
+    @extend %horizontalnav;
+    @include span(last);
+    ul li a {
+        &:before {
+            @extend %fa;
+            margin-right: 5px;
+            color: white;
+            font-size: 30px;
+            line-height: 55px;
+        }
+        &:visited {
+            &:before {
+                color: $white;
+            }
+        }
+        &:hover {
+            &:before {
+                color: $secondaryColor;
+            }
+        }
     }
-    &:visited {
-      &:before {
-        color: $white;
-      }
+    .mygithub {
+        margin-right: 5px;
+        @extend %text-hide;
+        &:before {
+            content: "\f113";
+        }
     }
-    &:hover {
-      &:before {
-        color: $secondaryColor;
-      }
+    .mycodepen {
+        @extend %text-hide;
+        &:before {
+            content: "\f1cb";
+        }
     }
-  }
+    .mylinkedin {
+        margin-right: 5px;
+        @extend %text-hide;
+        &:before {
+            content: "\f0e1";
+        }
+    }
+}
 
-  .mygithub {
-    margin-right: 5px;
-    @extend %text-hide;
-    &:before { content: "\f113"; }
-  }
-  .mycodepen {
-    @extend %text-hide;
-    &:before { content: "\f1cb"; }
-  }
-  .mylinkedin {
-    margin-right: 5px;
-    @extend %text-hide;
-    &:before { content: "\f0e1"; }
-  }
+a.badge-link {
+    text-decoration: none;
+    transform: rotate(20deg);
+    position: absolute;
+    animation-delay: 1900ms;
+    left: 85%;
+    top: 70px;
+    border: 1px dashed #ccc;
+    background: rgba(108, 244, 251, 0.6);
+    padding: 20px 50px;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.badge-span {
 }
